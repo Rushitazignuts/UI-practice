@@ -10,10 +10,25 @@ window.addEventListener("scroll", function() {
 
 document.querySelector(".navbar-toggler").addEventListener("click", function() {
     var navbar = document.querySelector(".sticky-nav");
+    var collapse = document.querySelector(".navbar-collapse");
+
     if (window.innerWidth <= 992) { // Check if the viewport is in responsive mode
-        navbar.classList.add("scrolled"); // Always add background color when menu opens
+        if (collapse.classList.contains("show")) {
+            navbar.classList.remove("scrolled"); // Remove background color when menu closes
+        } else {
+            navbar.classList.add("scrolled"); // Add background color when menu opens
+        }
     }
 });
+
+document.querySelector(".navbar-collapse").addEventListener('hidden.bs.collapse', function () {
+    var navbar = document.querySelector(".sticky-nav");
+
+    if (window.scrollY <= 50) { // Check if the scroll position is at the top
+        navbar.classList.remove("scrolled"); // Remove background color when menu closes and not scrolled
+    }
+});
+
 
 //  js for navigation link scroll into section wise
 
