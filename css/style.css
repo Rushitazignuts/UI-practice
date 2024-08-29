@@ -133,6 +133,7 @@ button:focus {
 }
 .hero-social-div {
   margin-top: 90px;
+  cursor: pointer;
 }
 .partner-logo {
   max-height: 50px;
@@ -422,6 +423,7 @@ h2.text-uppercase::after {
   width: 100%;
   background-color: #042c54;
   padding: 20px;
+  cursor: pointer;
 }
 .article-h4 {
   font-size: 20px;
@@ -430,6 +432,7 @@ h2.text-uppercase::after {
 }
 .article-p {
   margin-top: 350px;
+  cursor: pointer;
 }
 
 /* footer section css */
