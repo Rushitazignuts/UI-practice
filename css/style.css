@@ -1,9 +1,9 @@
 /* import Poppins font family */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* primary color */
-:root {
+/* :root {
   --bs-primary: #ed3237 !important;
-}
+} */
 /* comman css for some tag */
 body {
   font-family: "Poppins", sans-serif;
@@ -21,8 +21,9 @@ a:focus {
   outline: none !important;
   box-shadow: none !important;
 }
+/* navbar css */
 .sticky-nav.scrolled {
-  background-color: black; /* Change to your desired color */
+  background-color: black;
   transition: background-color 0.3s ease-in-out;
 }
 .merge-section {
@@ -42,7 +43,6 @@ a:focus {
   z-index: 99;
   transform: rotate(0deg);
 }
-/* navbar css */
 .navbar-light .navbar-toggler {
   color: white;
   border-color: white;
@@ -79,7 +79,6 @@ a:focus {
   top: 0;
   width: 100%;
   z-index: 9999;
-  /* background-color: black; */
 }
 .container-fluid {
   padding-inline: 0px;
@@ -92,12 +91,11 @@ a:focus {
 .navbar-light .navbar-nav .nav-link:hover {
   color: #ff57a6;
 }
-
 .navbar-nav {
   gap: 35px;
 }
 .navbar {
-  padding-inline: 60px;
+  padding-inline: 80px;
 }
 .signin-btn {
   color: #fff;
@@ -105,9 +103,8 @@ a:focus {
   font-weight: 500;
   cursor: pointer;
 }
-
 .navigation-section {
-  padding-top: 40px;
+  padding-block: 20px;
 }
 button:focus {
   outline: none !important;
@@ -129,22 +126,18 @@ button:focus {
   color: transparent;
   display: inline-block;
 }
-
 .hero-p {
   font-size: 20px;
   font-weight: 400;
   color: #81afdd;
 }
-
 .hero-social-div {
   margin-top: 90px;
 }
-
 .partner-logo {
   max-height: 50px;
   filter: invert(1);
 }
-
 .avatars img {
   height: 40px;
   width: 40px;
@@ -164,6 +157,7 @@ button:focus {
   outline: none;
   box-shadow: none;
 }
+
 /* gpt-section css */
 .gpt-section {
   padding-top: 150px;
@@ -194,7 +188,6 @@ button:focus {
   color: transparent;
   display: inline-block;
 }
-
 h2.text-uppercase::after {
   content: "";
   position: absolute;
@@ -223,6 +216,7 @@ h2.text-uppercase::after {
   width: 30px;
   background: linear-gradient(90deg, #ae67fa, #f49867);
 }
+
 /* open ai section */
 .ai-section {
   position: relative;
@@ -266,7 +260,6 @@ h2.text-uppercase::after {
   font-size: 18px;
   position: relative;
 }
-
 .open-ai-h31::after {
   content: "";
   position: absolute;
@@ -328,6 +321,7 @@ h2.text-uppercase::after {
   width: 30px;
   background: linear-gradient(90deg, #ae67fa, #f49867);
 }
+
 /* case studies section */
 .case-studies-section {
   background-color: black;
@@ -405,23 +399,18 @@ h2.text-uppercase::after {
 .article-1 {
   grid-area: article-1;
 }
-
 .article-2 {
   grid-area: article-2;
 }
-
 .article-3 {
   grid-area: article-3;
 }
-
 .article-4 {
   grid-area: article-4;
 }
-
 .article-5 {
   grid-area: article-5;
 }
-
 .article {
   max-width: 420px;
   width: 100%;
@@ -442,6 +431,7 @@ h2.text-uppercase::after {
 .article-p {
   margin-top: 350px;
 }
+
 /* footer section css */
 .footer-section {
   background-color: #031b34;
@@ -458,7 +448,6 @@ h2.text-uppercase::after {
   text-align: center;
   line-height: 75px;
 }
-
 .gradient-button {
   border: 1px solid #ffffff;
   padding: 10px 20px;
@@ -469,31 +458,25 @@ h2.text-uppercase::after {
   border-radius: 4px;
   transition: all 0.3s ease;
 }
-
 .gradient-button:hover {
   background-color: #ffffff;
   color: #0c0c30;
 }
-
 .footer-section h6 {
   font-weight: bold;
   margin-bottom: 35px;
 }
-
 .footer-section ul {
   list-style: none;
   padding: 0;
 }
-
 .footer-section ul li {
   margin-bottom: 25px;
 }
-
 .footer-section ul li a {
   color: #ffffff;
   text-decoration: none;
 }
-
 .footer-section ul li a:hover {
   color: #ff57a6;
 }
@@ -527,7 +510,6 @@ h2.text-uppercase::after {
     font-size: 42px;
     line-height: 64px;
   }
-
   .hero-p {
     font-size: 18px;
   }
@@ -555,7 +537,6 @@ h2.text-uppercase::after {
   .gpt-h2 {
     font-size: 22px;
   }
-
   .gpt-title {
     font-size: 30px;
   }
@@ -601,7 +582,6 @@ h2.text-uppercase::after {
     font-size: 36px;
     line-height: 58px;
   }
-
   .hero-p {
     font-size: 16px;
   }
@@ -663,9 +643,6 @@ h2.text-uppercase::after {
 }
 @media only screen and (max-width: 991px) {
   /* navigation css */
-  .sticky-nav {
-    /* background-color: black; */
-  }
   .navbar-nav {
     gap: 25px;
   }
@@ -674,7 +651,6 @@ h2.text-uppercase::after {
     font-size: 30px;
     line-height: 48px;
   }
-
   .hero-p {
     font-size: 14px;
   }
@@ -685,7 +661,6 @@ h2.text-uppercase::after {
   .hero-social-div {
     margin-top: 80px;
   }
-
   /* open-ai-section css */
   .open-ai-content {
     font-size: 12px;
@@ -744,23 +719,18 @@ h2.text-uppercase::after {
       "article-4 article-5"
       "article-1 .";
   }
-
   .article-1 {
     grid-area: article-1;
   }
-
   .article-2 {
     grid-area: article-2;
   }
-
   .article-3 {
     grid-area: article-3;
   }
-
   .article-4 {
     grid-area: article-4;
   }
-
   .article-5 {
     grid-area: article-5;
   }
@@ -782,7 +752,6 @@ h2.text-uppercase::after {
     line-height: 65px;
   }
 }
-
 @media only screen and (max-width: 768px) {
   /* hero section */
   .hero-section {
@@ -870,8 +839,12 @@ h2.text-uppercase::after {
     line-height: 60px;
   }
 }
-
 @media only screen and (max-width: 576px) {
+    /* navbar */
+    .navbar-nav {
+        gap: 18px;
+    }
+    /* library */
   .library-article {
     display: grid;
     grid-template-columns: 1fr;
@@ -887,9 +860,11 @@ h2.text-uppercase::after {
       "article-5"
       "article-1";
   }
+  /* gpt */
   .gpt-section {
     padding-top: 100px;
   }
+ 
 }
 @media only screen and (max-width: 480px) {
   /* navbar */
@@ -946,8 +921,11 @@ h2.text-uppercase::after {
     font-size: 16px;
   }
 }
-
 @media only screen and (max-width: 375px) {
+    /* navbar */
+    .navbar-nav {
+        gap: 10px;
+    }
   /* hero section */
   .hero-h1 {
     font-size: 24px;
@@ -987,14 +965,12 @@ h2.text-uppercase::after {
     padding-top: 50px;
   }
 }
-
 @media only screen and (max-width: 320px) {
   /* hero section */
   .hero-h1 {
     font-size: 18px;
     line-height: 35px;
   }
-
   /* gpt section */
   .gpt {
     padding: 40px;
